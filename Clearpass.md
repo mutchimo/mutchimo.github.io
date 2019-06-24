@@ -48,4 +48,23 @@
  
  ผู้ดูแลระบบสามารถที่จะเห็นข้อมูลของ Guest ที่ร้องขอเข้ามาและทำการ approve ให้ Guest สามารถเข้าใช้งานระบบเครือข่ายได้
  
+ **Social Login**
+ 
+ ![GitHub Logo](pic/guest3.jpg)
+ 
+ Guest สามารถที่จะเลือกได้ว่าต้องการ Login ด้วย Facebook หรือ Google หรือ Linkedin
+ 
+ ![GitHub Logo](pic/gmail.jpg)
+ 
+ อย่างเช่นเลือก Gmail Guest จะต้องกรอกข้อมูล email และ password ของ Gmail เพื่อทำการ Authentication 
+ 
+ ![GitHub Logo](pic/gmail2.jpg)
+ 
+ ข้อมูลที่ Guest กรอกเข้าไปจะไปปรากฏที่หน้า Management ของผู้ดูแลระบบ ซึ่งจะสามารถมองเห็นว่า Guest เข้ามาด้วย email อะไร และได้ IP address อะไรไป
+ 
+ ![GitHub Logo](pic/face.jpg)
+ 
+ ถ้าเลือกเป็นใช้ Facebook ก็จะเปลี่ยนหน้า Login ให้เหมือนกับตอนที่เราจะเข้าใช้งาน Facebook และ Guest ต้องทำการกรอก password ให้เหมือนกับตอนจะเข้าใช้งาน Facebook
+ 
+ 
  
