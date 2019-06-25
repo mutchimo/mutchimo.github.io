@@ -50,21 +50,55 @@
  
  **Social Login**
  
- ![GitHub Logo](pic/guest3.jpg)
+ในการใช้ Social Login เข้ามาช่วยในเรื่องของการร้องขอเพื่อเข้าใช้ระบบเครือข่ายนั้นก็เป็นอีกวิธีการที่ไม่ซับซ้อนและง่ายต่อการจัดการ สำหรับเมื่อต้องมีการนำไปใช้เมื่อมีการจัดงานใหญ่ ๆ ที่มีคนจำนวนมากมาขอเข้าใช้งานระบบเครือข่ายหรือสำหรับพื้นที่สาธารณะ โดยที่ผู้ให้บริการ Social แต่ละรายจะต้องสามารถตั้งค่าให้ ClearPass สามารถที่จะทำการ Login ได้ ซึ่งโดยทั่วไปแล้วจะใช้เป็นการสร้าง Application ขึ้นมาที่ด้านของผู้ให้บริการและเปิดการพิสูจน์ตัวตนสำหรับ Application นั้น ๆ ซึ่งหลังจากเราทำการสร้าง Application ขององค์กรเราขึ้นมาแล้วนั้นทางด้าน Application ของผู้บริการจะมีการส่งรหัสลับกลับมาให้ผู้ดูแลระบบใช้กรอกเข้าไปในตอนติดตั้งเพื่อให้ระบบ ClearPass นั้นสามารถตรวจสอบความถูกต้องกับ Application นั้นได้
+
+* **Facebook**
+
+Login เข้าสู่ Facebook developer ที่ https://developers.facebook.com/ และทำการสร้าง Application ขึ้นมาเลือก Advance Setup
+
+![GitHub Logo](pic/face2.jpg)
+
+ทำการตั้งชื่อ Application และเลือกหมวด Apps for pages และทำการสร้าง App ID
+
+![GitHub Logo](pic/face3.jpg)
+
+หลังจากนั้นจะได้รับแจ้งส่งการตรวจสอบความปลอดภัยผ่านทาง Captcha หลังจากนั้นก็จะ Redirected หน้าไปที่ Application Dashboard แล้วเลือกหัวข้อ Settings
+
+![GitHub Logo](pic/face4.jpg)
+
+ทำการใส่ App Domains และ Contact Email หลังจากนั้นเลือกเมนู Add Platform แล้วเลือก Platform Website
+
+![GitHub Logo](pic/face5.jpg)
+
+![GitHub Logo](pic/face6.jpg)
+
+ใส่ข้อมูล "Site URL" และ "Mobile Site URL" ซึ่ง URL จะต้องตรงกับการเข้าสู่ระบบของ Captive Portal ที่กำหนดค่าใน Aruba Mobility Controller (% login_url%) โดยต้องใช้ชื่อโดเมนและไม่ใช่ IP Address ในการกำหนดค่า URL ในขั้นตอนนี้นั้นการตั้งค่า DNS Server ต้อง map กับ Fully Qualified Domain Name (FQDN) และเลือก Save Changes
+
+![GitHub Logo](pic/face7.jpg)
+
+ASE Captive Portal Configuration
+
+![GitHub Logo](pic/face8.jpg)
+
+Copy และ Past "App ID" และ "App Secret" ลงในช่อง "Facebook Client ID" และ Facebook Client Secret ใน ASE
+
+![GitHub Logo](pic/face9.png)
+
+หลังจากขั้นตอนการตั้งค่าให้สามารถใช้งานกับ Social Login แล้ว Guest ก็สามารถที่จะ Login เข้าระบบผ่าน Facebook ได้
  
- Guest สามารถที่จะเลือกได้ว่าต้องการ Login ด้วย Facebook หรือ Google หรือ Linkedin
+![GitHub Logo](pic/guest3.jpg)
  
- ![GitHub Logo](pic/gmail.jpg)
+Guest สามารถที่จะเลือกได้ว่าต้องการ Login ด้วย Facebook หรือ Google หรือ Linkedin
  
- อย่างเช่นเลือก Gmail Guest จะต้องกรอกข้อมูล email และ password ของ Gmail เพื่อทำการ Authentication 
+![GitHub Logo](pic/gmail.jpg)
  
- ![GitHub Logo](pic/gmail2.jpg)
+อย่างเช่นเลือก Gmail Guest จะต้องกรอกข้อมูล email และ password ของ Gmail เพื่อทำการ Authentication 
  
- ข้อมูลที่ Guest กรอกเข้าไปจะไปปรากฏที่หน้า Management ของผู้ดูแลระบบ ซึ่งจะสามารถมองเห็นว่า Guest เข้ามาด้วย email อะไร และได้ IP address อะไรไป
+![GitHub Logo](pic/gmail2.jpg)
  
- ![GitHub Logo](pic/face.jpg)
+ข้อมูลที่ Guest กรอกเข้าไปจะไปปรากฏที่หน้า Management ของผู้ดูแลระบบ ซึ่งจะสามารถมองเห็นว่า Guest เข้ามาด้วย email อะไร และได้ IP address อะไรไป
  
- ถ้าเลือกเป็นใช้ Facebook ก็จะเปลี่ยนหน้า Login ให้เหมือนกับตอนที่เราจะเข้าใช้งาน Facebook และ Guest ต้องทำการกรอก password ให้เหมือนกับตอนจะเข้าใช้งาน Facebook
+![GitHub Logo](pic/face.jpg)
  
- 
+ถ้าเลือกเป็นใช้ Facebook ก็จะเปลี่ยนหน้า Login ให้เหมือนกับตอนที่เราจะเข้าใช้งาน Facebook และ Guest ต้องทำการกรอก password ให้เหมือนกับตอนจะเข้าใช้งาน Facebook
  
