@@ -1,4 +1,7 @@
-**Requirement ID :** V2.1
-**Requirement name :** Password Security Requirements
-**OTG #1 :** Testing for Weak password policy (OTG-AUTHN-007)
-**OTG #2 :** Testing for Weak security question/answer (OTG-AUTHN-008)
+**Requirement ID :** V1.9
+
+**Requirement name :** Communications Architectural Requirements
+
+**OTG #1 :** Testing for Credentials Transported over an Encrypted Channel (OTG-AUTHN-001)
+
+**OTG #2 :** Testing for Bypassing Authentication Schema (OTG-AUTHN-004)
